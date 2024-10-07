@@ -39,6 +39,10 @@ input, select, textarea {
     font-family: 'Roboto', sans-serif; /* Form fields use Roboto */
 }
 
+select[multiple] {
+    height: 100px; /* Increase height for multiple selection */
+}
+
 button {
     padding: 10px 20px;
     background-color: #4B2E83; /* ACU Purple for buttons */
