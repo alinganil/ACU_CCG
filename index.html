@@ -21,21 +21,21 @@
     <!-- Form to collect event information -->
     <form id="couponForm">
         <label for="eventName">Event Name:</label>
-        <input type="text" id="eventName" name="eventName" required>
+        <input type="text" id="eventName" name="eventName" required placeholder="e.g., Diwali">
 
         <label for="eventDate">Event Date:</label>
         <input type="date" id="eventDate" name="eventDate" required>
 
-        <label for="eventAudience">Who is the event for?</label>
-        <select id="eventAudience" name="eventAudience" required>
-            <option value="students">Students</option>
-            <option value="faculty">Faculty</option>
-            <option value="alumni">Alumni</option>
-            <option value="community">Community</option>
+        <label for="eventAudience">Who is the event for? (Select multiple if needed)</label>
+        <select id="eventAudience" name="eventAudience" multiple required>
+            <option value="Students">Students</option>
+            <option value="Faculty">Faculty</option>
+            <option value="Alumni">Alumni</option>
+            <option value="Community">Community</option>
         </select>
 
         <label for="eventDescription">Event Description:</label>
-        <textarea id="eventDescription" name="eventDescription" rows="4"></textarea>
+        <textarea id="eventDescription" name="eventDescription" rows="4" placeholder="A night of celebration and lights..."></textarea>
 
         <button type="button" onclick="generateCoupon()">Generate Coupon Code</button>
     </form>
