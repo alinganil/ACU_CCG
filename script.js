@@ -27,5 +27,5 @@ function generateMemorableCode(eventName, eventDate) {
     const randomDigits = Math.floor(1000 + Math.random() * 9000); // Random 4-digit number for uniqueness
 
     // Format the coupon code in a memorable way
-    return `FESTIVAL-${eventKeyword}-${year}-${randomDigits}`;
+    return `-${-${eventKeyword}-${year}-${randomDigits}`;
 }
