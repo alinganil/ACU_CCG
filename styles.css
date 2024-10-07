@@ -1,13 +1,20 @@
+/* ACU Branding Fonts */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #4B2E83; /* ACU Purple */
-    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif; /* Body text uses Roboto */
+    background-color: #FFFFFF; /* White background */
+    color: #4B2E83; /* ACU Purple */
     margin: 20px;
     text-align: center;
 }
 
+h1, h3 {
+    font-family: 'Lora', serif; /* Headings use Lora */
+}
+
 header {
     margin-bottom: 30px;
+    padding: 20px;
+    border-bottom: 3px solid #4B2E83; /* Purple border for accent */
 }
 
 #logo {
@@ -15,26 +22,48 @@ header {
     margin-bottom: 10px;
 }
 
-label, input, select, textarea {
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, select, textarea {
     display: block;
     margin: 10px auto;
     max-width: 300px;
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
+    border: 2px solid #4B2E83; /* Purple borders for inputs */
+    border-radius: 5px; /* Rounded corners */
+    font-family: 'Roboto', sans-serif; /* Form fields use Roboto */
 }
 
 button {
     padding: 10px 20px;
-    background-color: #F5C211; /* ACU Gold */
-    color: #4B2E83;
+    background-color: #4B2E83; /* ACU Purple for buttons */
+    color: #FFFFFF; /* White text on buttons */
     border: none;
     cursor: pointer;
     font-weight: bold;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif; /* Button text uses Roboto */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+button:hover {
+    background-color: #3E246E; /* Darker shade of purple for hover */
 }
 
 #coupon-code {
     margin-top: 20px;
     font-weight: bold;
     font-size: 1.2em;
+    border: 2px solid #4B2E83; /* Purple border for coupon code section */
+    padding: 15px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #F5C211; /* ACU Gold */
+    color: #4B2E83; /* Purple text */
 }
