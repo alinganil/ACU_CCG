@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACU Coupon Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="ACU Alumni Logo" id="logo">
+        <h1>ACU Coupon Code Generator</h1>
+    </header>
+
+    <!-- Form to collect event information -->
+    <form id="couponForm">
+        <label for="eventName">Event Name:</label>
+        <input type="text" id="eventName" name="eventName" required>
+
+        <label for="eventDate">Event Date:</label>
+        <input type="date" id="eventDate" name="eventDate" required>
+
+        <label for="eventAudience">Who is the event for?</label>
+        <select id="eventAudience" name="eventAudience" required>
+            <option value="students">Students</option>
+            <option value="faculty">Faculty</option>
+            <option value="alumni">Alumni</option>
+            <option value="community">Community</option>
+        </select>
+
+        <label for="eventDescription">Event Description:</label>
+        <textarea id="eventDescription" name="eventDescription" rows="4"></textarea>
+
+        <button type="button" onclick="generateCoupon()">Generate Coupon Code</button>
+    </form>
+
+    <!-- Section to display generated coupon code -->
+    <div id="coupon-code"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
