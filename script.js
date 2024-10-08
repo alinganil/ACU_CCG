@@ -3,8 +3,6 @@ function generateCoupon() {
     // Get user input values
     const eventName = document.getElementById("eventName").value.trim();
     const eventDate = document.getElementById("eventDate").value.trim();
-    const eventAudience = Array.from(document.getElementById("eventAudience").selectedOptions).map(option => option.value).join(", ");
-    const eventDescription = document.getElementById("eventDescription").value.trim();
 
     // Generate a memorable coupon code
     const couponCode = generateMemorableCode(eventName, eventDate);
@@ -20,7 +18,7 @@ function generateCoupon() {
 // Helper function to generate a memorable coupon code
 function generateMemorableCode(eventName, eventDate) {
     // Use event name and year to create a unique memorable part of the code
-    const eventKeyword = eventName.replace(/\s+/g, '').toUpperCase().substring(0, 5); // First 3 letters of event name
+    const eventKeyword = eventName.replace(/\s+/g, '').toUpperCase().substring(0, 5); // First 5 letters of event name
     const year = new Date(eventDate).getFullYear(); // Extract year from event date
     const randomDigits = Math.floor(1000 + Math.random() * 9000); // Random 4-digit number for uniqueness
 
