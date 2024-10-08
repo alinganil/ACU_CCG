@@ -20,7 +20,7 @@ function generateMemorableCode(eventName, eventDate) {
     // Use event name and year to create a unique memorable part of the code
     const eventKeyword = eventName.replace(/\s+/g, '').toUpperCase().substring(0, 5); // First 5 letters of event name
     const year = new Date(eventDate).getFullYear(); // Extract year from event date
-    const randomDigits = Math.floor(1000 + Math.random() * 9000); // Random 4-digit number for uniqueness
+    const randomDigits = Math.floor(100 + Math.random() * 900); // Random 4-digit number for uniqueness
 
     // Format the coupon code in a memorable way
     return `${eventKeyword}-${year}-${randomDigits}`;
