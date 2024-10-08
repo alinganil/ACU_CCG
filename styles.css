@@ -1,8 +1,8 @@
 /* ACU Branding Fonts */
 body {
     font-family: 'Roboto', sans-serif; /* Body text uses Roboto */
-    background-color: #FFFFFF; /* White background */
-    color: #4B2E83; /* ACU Purple */
+    background-color: #000000; /* Black background */
+    color: #FFFFFF; /* White text */
     margin: 20px;
     text-align: center;
 }
@@ -17,9 +17,11 @@ header {
     border-bottom: 3px solid #4B2E83; /* Purple border for accent */
 }
 
+/* Invert logo colors to make it white */
 #logo {
     width: 150px;
     margin-bottom: 10px;
+    filter: invert(1) brightness(2); /* Inverts the logo color and makes it brighter */
 }
 
 label {
@@ -27,7 +29,7 @@ label {
     margin-top: 10px;
 }
 
-input, select, textarea {
+input {
     display: block;
     margin: 10px auto;
     max-width: 300px;
@@ -37,10 +39,8 @@ input, select, textarea {
     border: 2px solid #4B2E83; /* Purple borders for inputs */
     border-radius: 5px; /* Rounded corners */
     font-family: 'Roboto', sans-serif; /* Form fields use Roboto */
-}
-
-select[multiple] {
-    height: 100px; /* Increase height for multiple selection */
+    background-color: #FFFFFF; /* White input background */
+    color: #4B2E83; /* Purple text for inputs */
 }
 
 button {
@@ -70,4 +70,11 @@ button:hover {
     display: inline-block;
     background-color: #F5C211; /* ACU Gold */
     color: #4B2E83; /* Purple text */
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #FFFFFF; /* White text */
 }
